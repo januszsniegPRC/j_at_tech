@@ -1,0 +1,152 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+}
+hr {
+	border: 2px solid white; 
+}
+
+.first {
+	color: white;
+}
+
+.logo
+{
+	display: block;
+	margin-right: auto;
+	padding: 20px;
+	width: 8%;
+	position: relative;
+	top: 60px;
+}
+
+.menu-bar
+{
+	background: #07586F;
+	color: white;
+	text-align: center;
+}
+
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: black;
+	margin-top: 0.5%; 
+}
+
+.menu-bar ul li
+{
+	width: 100px;
+	margin: 15px;
+	padding: 10px;
+}
+
+.menu-bar ul li a 
+{
+	text-decoration: none;
+	color: white;
+}
+
+.active, .menu-bar ul li:hover
+{
+	background: grey;
+	border-radius: 3px;
+}
+
+.sub-menu-1
+{
+	display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: relative;
+	margin-top: 15px;
+	margin-left: -100px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+}
+
+.intro-index, .intro-index-two
+{
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+.list-index-one, .list-index-two, .list-index-three, .list-index-four
+{
+	list-style-type: circle;
+	margin: auto;
+	width: 48%;
+	padding: 10px;
+	font-family: arial;
+}
+
+.page3-subh
+{
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+.yt-vid
+{
+	display: block;
+	margin: 0 auto;
+}
+
+.hig-ref
+{
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 25px;	
+	background: #c7c7c7;
+	flex-wrap: wrap-reverse;
+}
+
+/* tablet landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* tabled portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+logo
+{
+	max-width: 100%; 
+	height: auto;
+}
+
+.img-homepage
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}

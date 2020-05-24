@@ -1,0 +1,29 @@
+.roll-bar
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+.roll-bar p 
+{
+	animation: slide-left 10s;
+}
+
+@keyframes roll-bar
+{
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+	
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+
+img
+{
+	max-width: 100%; 
+	height: auto;
+}

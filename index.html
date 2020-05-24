@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<title>Home</title>
+		<link rel="stylesheet" href="main.css"  type="text/css" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="searchstyle.css" type="text/css" />
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+		<link rel="stylesheet" href="footer.css" type="text/css" />
+		<link rel="stylesheet" href="slideshow-index.css" type="text/css">
+		<link rel="stylesheet" href="testing_css.css" type="text/css">
+		
+	</head>
+
+	<body>
+		
+		<div id="page-container">
+		<div id="content-wrap">
+		<div class="menu-bar">
+			<a href="index.html"><img class="logo" src="banner-size.jpg"></a>
+			<ul>
+				<li class="activ"><a href="index.html">Home</a></li>
+				<li><a href="alt-look.html">Timeline</a>
+					<div class="sub-menu-1">
+						<ul>
+							<li><a href="page2.html">Full Timeline</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="timeline-alternative.html">Resources</li>
+				<li><a href="page3.html">More</a></li>
+				<li><a href="about-me.html">About Me</a></li>
+			</ul>
+		</div>
+		
+		<!--- ANIMATED SLIDE TEXT--->
+		<div class="roll-bar">	
+			<p></p>
+		</div>
+		
+		<!--- end --->
+		
+		<p class="intro-index">The sore website purpose is to educate those who are interested in studying Computer Science or other related courses. We're looking at the <i>Brief History of Technologies</i> from early/mid 20th century then making our way up to the second decade of 21st century.
+		<br>
+		<br>
+		<b>What can you expect from this website?</b></p>
+		
+		<!-- SUBJECT TO CHANGE -->
+		
+			<li class="list-index-one">Where did it all start?</li>
+			<li class="list-index-two">The Inventors in the last 70 years</li>
+			<li class="list-index-three">Their accomplishments</li>
+			<li class="list-index-four">Useful Links / Further Reading</li>
+		
+		<p class="intro-index-two">
+		Research conducted on the author's behalf was taken from five different sources to validate events in the timeline that necessarily differed from other sources.
+		<br>
+		<br>
+		This website is free to use, with no ads in mind and all files used to code the fundamentals are located on the <a href="https://github.com/januszsniegPRC/j_at_tech">GitHub</a>.
+		<br>
+		<br>
+		Tabs such as <u><b>Resources</b></u> and <u><b>More</b></u> are insignificant compared to what Timeline offers. Timeline tab is the main attraction of this website allowing you to view more.
+		<br>
+		<br>
+		Also, you can expect in the More tab few other interesting stuff that can help to alleviate the boredom or improve your workflow. This website will always remain Ad-Free because not only it was created in a mind to aid others but also to educate people interesting in programming. Lastly, no need to worry from being spied on. There are no cookies or hidden software that will track your activity.
+		<br>
+		<br>
+		All the images that you have seen used on this site have been taken straight from Google Images. I declare that I have no revenue from this site, and internet's images were used for the educational purposes.
+		</p>
+		
+		<script>
+			var  i = 0;
+			var images = [];
+			var time = 5000;
+			
+			images[0] = '36231833334_3252f05552_b.jpg'
+			images[1] = 'sheffield_hero_computerscience.jpg'
+			images[2] = 'evolution-tech.jpg'
+			
+			function changeImg(){
+				document.slide.src = images[i]; //By naming our img with slide, js knows this script should be asigned to three pictures we chose
+				
+				if( i < images.length - 1){
+					i++;
+					} else {
+					i = 0;
+					}
+					
+					setTimeout("changeImg()", time); 
+					}
+					
+			window.onload = changeImg;
+		</script>
+		
+		<img name="slide" width="400" height="200" class="img-homepage">
+		
+		<hr>
+		
+		<!--- Footer --->
+		
+		<footer>
+			<div class="footer-container">
+				<div class="left-col">
+					<div class="social-media">
+						<!--- <a href="#"><i class="fab fa-twitter"></i></a> <!--- tbd --->
+						<a href="https://www.linkedin.com/in/janusz-snieg-93605218a/"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+					<p class="rights-text">2020 <a href="https://copyrightservice.co.uk/copyright/p01_uk_copyright_law">©</a> | Designed by Janusz Snieg, All Rights Reserved</p>
+				</div>
+				
+				<div class="right-col">
+					<h2></h2>
+					<p class="rights-text"><b>Message us:</b> <a href="mailto:j.technium@gmail.com">E-mail</a></p>
+					<p class="rights-text"><b>Call us:</b> 01234567890</p>
+				</div>
+			</div>
+		</footer>
+		</div>
+		</div>
+	</body>
+</html>
